@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="8dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp">
+
+
+<com.google.android.material.card.MaterialCardView
+android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start"
+    android:layout_marginBottom="4dp"
+    android:layout_marginEnd="64dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="#78DF3A">
+
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:padding="10dp"
+    android:orientation="vertical">
+
+
+<TextView
+android:id="@+id/senderNameTextView"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Sender Name"
+android:textColor="#3F51B5"
+    android:textSize="14sp"
+    android:textStyle="bold"
+    android:layout_marginBottom="2dp"
+    android:visibility="gone" />
+
+<TextView
+android:id="@+id/messageContentTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="This is a message received from another user. It should be on the left."
+    android:textColor="@android:color/black"
+    android:textSize="16sp"
+    android:maxWidth="250dp" />
+
+<TextView
+android:id="@+id/timestampTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    android:layout_marginTop="4dp"
+    android:text="10:30 AM"
+    android:textColor="#666666"
+    android:textSize="10sp" />
+
+    </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
